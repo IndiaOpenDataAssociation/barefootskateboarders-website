@@ -1,0 +1,70 @@
+API:
+  https://api.preadr.com/api/v1/category-feed/?super_category=sports&category=cricket&page=0 [example]
+  
+  https://api.preadr.com/api/v1/category-feed/?super_category=sports&category=cricket&page=0 [once skate boarding related content is live]
+ 
+GET params:
+  ::super_category: <str> [skate for this use case]
+  ::category: <str>
+  ::page: <int>
+  
+JSON response:
+
+{
+    "total_count": 322,
+    "last_page": 32,
+    "items_count": 10,
+    "items": [
+        {
+            "_id": "5ae804f886c4ed3b411650c2",
+            "created_at": "2 days ago",
+            "published_at": "Yesterday",
+            "category_measures": [
+                {
+                    "id": "5aae8e2c86c4ed34b86f11bb",
+                    "name": "cricket",
+                    "display_name": "Cricket",
+                    "short_display_name": "cricket",
+                    "image": "/media/stock_images/cricket1.jpg",
+                    "description": null,
+                    "level": 1,
+                    "super_category": "sports",
+                    "category": "cricket",
+                    "sub_category": null,
+                    "is_live": true,
+                    "is_live_client": true
+                }
+            ],
+            "title": "The marginalisation of Alastair Cook, England's anonymous titan",
+            "item_url": "http://www.espncricinfo.com/story/_/id/23365258/the-marginalisation-alastair-cook-england-anonymous-titan",
+            "source_name": "reddit",
+            "item_source_url": "https://www.reddit.com/r/Cricket.json",
+            "client_source_name": "espncricinfo.com",
+            "description": "Alastair Cook entered the assembly hall at Rusthall Primary School through a guard of honour of plastic bats.\nAnd as a consequence, he's not holding his breath for a new generation of Alastair Cooks to come rushing into the game.\nBut Cook knows, just as most of cricket's existing fans know, that this new format is not about him, or even them.\nIt's a \"simple\" format, was the somewhat clunky explanation from Andrew Strauss, England's director of cricket, designed to appeal to \"mums and kids\".\nBut, at this late stage of his career, Cook is entitled to begin to wonder.",
+            "description_html": "Alastair Cook entered the assembly hall at Rusthall Primary School through a guard of honour of plastic bats.\nAnd as a consequence, he's not holding his breath for a new generation of Alastair Cooks to come rushing into the game.\nBut Cook knows, just as most of cricket's existing fans know, that this new format is not about him, or even them.\nIt's a \"simple\" format, was the somewhat clunky explanation from Andrew Strauss, England's director of cricket, designed to appeal to \"mums and kids\".\nBut, at this late stage of his career, Cook is entitled to begin to wonder.",
+            "content": "Alastair Cook entered the assembly hall at Rusthall Primary School through a guard of honour of plastic bats. He watched, on the school projector, a brief re-run of his winter's undoubted highlight, that Ashes-best 244 not out at Melbourne. And then, after a lively Kwik cricket session in the playground, he was presented with a cake to commemorate his achievement in passing 12,000 Test runs.\n\nIt all added up to a nice, low-key but upbeat, opportunity for England's former captain and record Test run-scorer to re-enter the limelight of another English cricket season.\n\nBut he did so against a backdrop of clanking and whirring from the machine of which he has been such an integral cog for the past 12 years and 154 Tests - and to judge by its most recent permutations, that machine appears to have rendered Cook's particular skill-set nigh on obsolete.\n\n\"The Hundred\" is the format that the ECB believe is going to appeal to their elusive next generation - 100 balls per innings, in which to biff as many runs as possible, with the whole match done and dusted in the space of two and a half hours.\n\n\"I'll have a hack!\" Cook joked. \"Everyone laughs when I say that I've got a T20 hundred. It's deeply unfair.\"\n\nBut Cook knows, just as most of cricket's existing fans know, that this new format is not about him, or even them. The sort of 14-hour epic that Cook compiled in Abu Dhabi three winters ago counts for little in the current climate, not to mention the 94 occasions in 279 Test innings in which he has used up 100 or more deliveries without any assistance from his team-mates.\n\nAdmittedly, in his most recent series, in New Zealand last month, Cook veered rather closer to the zeitgeist, being dismissed four times in the space of 65 balls, en route to a career-low series average of 5.75.\n\nBut it's hard to imagine that either those highs or those lows will have made the blindest jot of difference to the gaggles of kids staring up at him from the assembly-hall floor with a mixture of awe and bewilderment.\n\n\"Do you think they knew who you were?\" asked one of the journalists afterwards.\n\n\"They'd been told well!\" Cook replied, not even for a split-second protesting the bitter implications of that question.\n\nFor English sport cannot have produced many more anonymous titans than Alastair Cook - a man whose international career began the very winter after English cricket's great farewell to relevance in the 2005 Ashes, and which could yet come to an end before the summer of 2020, when the sport's reboot - including a partial return to free-to-air television - will come to fruition.\n\n\"Not a single one of the 12693 deliveries that Cook has faced in his record 82 consecutive home Test appearances has been shown on terrestrial television\"\n\nAnd in between those two dates, not a single one of the 12693 deliveries that Cook has faced in his record 82 consecutive home Test appearances - dating back to his home debut against Sri Lanka at Lord's in May 2006 - has been shown on terrestrial television. Regardless of his at-times superhuman feats of longevity, he's become an inadvertent advert for a sport that has been allowed to drift away from popular culture.\n\nDoes it bother Cook that his efforts have gone unnoticed by so many for so long? \"Not with my batting!\" he joked. \"But people are aware of that and they do need to get it more accessible, and that is the next stage. The financial state of English cricket is far healthier now than it was on terrestrial television, but one thing that's different now is that people don't watch games, even football, they watch 10-minute highlights of it on their phone the next morning, and that is one thing cricket has to consider.\"\n\nThat abundance of choice is a challenge for all sports administrators, but it feels particularly acute for cricket - a sport which fewer than three in five children currently name among their top-ten favourite activities. And among the many shocking revelations that jolted the ECB into its brave new world of panic-revolution, the realisation that Cook was less well known among kids than the wrestler John Cena was perhaps the most visceral.\n\nIn fact, when the kids of Rusthall Primary were asked, during their assembly, to name some other famous cricketers, the three answers they came up with were: Joe Root (thank God), Andrew Flintoff (who retired from Test cricket in 2009, before most of those present had been born) and \"my daddy!\" which was cute, but seriously, would Messi, Neymar or even Lizzy Yarnold have elicited such a blank reaction?\n\nTo be clear: Cook's lack of a public profile is a symptom, not the cause. For the most part his anonymity has served him well - both as a batsman out in the middle, where his precise role has been to draw the heat and leave the attention-grabbing to other more flamboyant colleagues, and off the field too. He's avoided social media throughout his career and, unencumbered by fame, takes pleasure in being able to return to his family farm between tours, most recently of course to help out with the lambing season.\n\nBut despite his diplomatic response to \"The Hundred\" initiative - (\"I did read the email briefly it's intriguing, it's interesting\") - Cook would be entitled to feel ever so slightly cheesed off at the speed with which everything he's held dear throughout a career of intense dedication is being allowed to slide from prominence.\n\nLet's not forget, it wasn't so long ago that the ECB (under different management, admittedly) were touting Cook's unquestionable decency as the gold standard for their sport. Of course, this manifested itself in another cack-handed PR shambles, with Cook forced to live down Giles Clarke's cloying accolade that he and his family were the \"right sort of people\", as well as face down the very personal vitriol that came his way when Kevin Pietersen's excommunication was allowed to be dressed up as the captain's personal decision.\n\nAlastair Cook plays cricket with schoolkids during a Chance to Shine / Yorkshire Tea event Getty Images\n\nBut the mistakes that were made four years ago - in particular, that preference for \"ethic and philosophy\" over engagement and activity - feel as though they are now being rectified through a wild lurch down an alternative path, one which has placed participation at the absolute heart of everything the board is now setting out to achieve.\n\nTo be fair, most of that work can only be considered a good thing. Take this very school visit, for instance, with Cook appearing as an ambassador for Chance to Shine during the launch of the 2018 Yorkshire Tea Cricket Week. Chance to Shine has been undertaking vital community projects for 13 years now, reintroducing cricket to millions of children in the country's state schools, and last summer it was joined by the launch of the ECB's All Stars Cricket initiative, which for 40 offers five- to eight-year-olds weekly introductory sessions during the summer months, and their own backpack's worth of kit, including bat, ball and named shirt.\n\nAll of which is worthy in the extreme. The concern, however, is that in the course of their detailed market research, the ECB have lost any confidence that cricket is a game worth promoting in its own right. Hence the birth of The Hundred, a rather transparent attempt to cultivate those delicate shoots of engagement, and nurture them using a form of the game that has been stripped of any scary detail.\n\nIt's a \"simple\" format, was the somewhat clunky explanation from Andrew Strauss, England's director of cricket, designed to appeal to \"mums and kids\". And last week, Eoin Morgan, the one-day captain, went even further than that, claiming that the point of the product is to \"upset people that already come to a game\".\n\nThat, however, is looking like the easy part of the deal. With two years to go, the biggest challenge for the ECB will be ensuring that their new customers are suitably enthralled by the fare that's placed before them. Which partially explains the board's peculiar jockeying for position throughout a pretty dismal winter - Tom Harrison's insistence that the game is in \"good shape\" in spite of a 4-0 Ashes drubbing; the desperate desire to rehabilitate Ben Stokes \"on the field\" after his Bristol misdemeanours, and the paranoia about the players' off-field behaviour in Australia.\n\nBut where all that leaves Cook's ambassadorial duties, beyond the paleontological fascination of being a living relic, is a determinedly moot point. At a time when the sport is crying out for role models, he offers everything you could hope for in a hero ... except for everything that the ECB are trying to sell through their new whizz-bang format.\n\nAnd as a consequence, he's not holding his breath for a new generation of Alastair Cooks to come rushing into the game. \"I doubt that,\" he said. \"There's a bit of thing at the moment about white-ball skills, and it's going to be very hard to talk kids into - why would you at this precise moment in time, put yourself through the stresses and strains of a five-day game, when there's the three-hour crash-bang-wallop there's more incentive for that.\"\n\nHe's not the type to grumble - not publicly at least. But, at this late stage of his career, Cook is entitled to begin to wonder. What on earth is going to become of his legacy?",
+            "images": [
+                "http://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1130857_1296x729.jpg"
+            ],
+            "logo": "https://logo-core.clearbit.com/www.espncricinfo.com",
+            "read_time": "5 min read",
+            "action_counts": {
+                "click": 0,
+                "save": 0,
+                "like": 0,
+                "page-load-link": 0
+            },
+            "super_category": [
+                "sports"
+            ],
+            "category": [
+                "cricket"
+            ],
+            "sub_categories": [],
+            "language": null,
+            "is_live": true,
+            "is_like": false,
+            "is_save": false
+        },
+     ]
+  }
