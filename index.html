@@ -1,1 +1,86 @@
-coming soon.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bare Foot SkateBoarders</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@0.4.0/modern-normalize.css" integrity="sha256-JnM5lZxo34G6pAQVpQ6fevyogtYt3Kro9tl7NA6reY0=" crossorigin="anonymous">
+    <style>
+        .page {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1em;
+        }
+        .page__title {
+            text-align: center;
+        }
+        .feed {
+            padding-top: 0.5em;
+            padding-bottom: 1em;
+        }
+        .feed__item__title {
+            margin-bottom: 0;
+        }
+        .feed__item__meta {
+            margin-top: 0.2em;
+            font-size: 0.8em;
+        }
+        .feed__sponsor {
+            text-align: right;
+            border-top: 1px solid #ccc;
+            padding-top: 0.5em;
+            font-size: 0.7em;
+        }
+    </style>
+</head>
+<body class='page'>
+    <h1 class='page__title'>Bare Foot SkateBoarders</h1>
+
+    <div id="feed" class="feed">
+        <div class="loading" v-if="is_loading">Loading...</div>
+        <div class="feed__list">
+            <div class="feed__item" v-for="(item, index) in feedItems">
+                <h3 class="feed__item__title">{{ index + 1 }}. {{ item.title }}</h3>
+                <p class="feed__item__meta">
+                    <a v-bind:href="item.item_url">{{ item.item_url }}</a> |
+                    {{ item.created_at }}
+                </p>
+            </div>
+        </div>
+        <p class="feed__sponsor" v-if="!is_loading">Feed Powered by  <a href="https://preadr.com?ref=barefootskateholder">Preadr.com</a></p>
+    </div>
+
+
+
+<!-- development version, includes helpful console warnings -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+<!-- production version, optimized for size and speed -->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script>
+var feedUrl = "https://api.preadr.com/api/v1/category-feed/?super_category=sports&category=skate&page=0";
+var feedApp = new Vue({
+    el: '#feed',
+    data: {
+        is_loading: true,
+        feedItems: []
+    },
+    created: function () {
+        this.fetchData()
+    },
+    methods: {
+        fetchData: function () {
+            var xhr = new XMLHttpRequest()
+            var self = this
+            xhr.open('GET', feedUrl)
+            xhr.onload = function () {
+                responseText = JSON.parse(xhr.responseText)
+                self.feedItems = responseText.items;
+                self.is_loading = false;
+            }
+            xhr.send()
+        }
+    }
+});
+</script>
+</body>
+</html>
